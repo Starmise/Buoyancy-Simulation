@@ -206,7 +206,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365073369}
   serializedVersion: 4
-  m_Mass: 5
+  m_Mass: 6
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -536,7 +536,7 @@ Transform:
   m_GameObject: {fileID: 894622320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.272, y: 1.19, z: 1.24}
+  m_LocalPosition: {x: -0.77, y: 1.19, z: 1.24}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -675,13 +675,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.17116897, y: -0, z: -0, w: 0.9852418}
+  m_LocalPosition: {x: 0, y: 2.23, z: -4.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.712, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,6 +994,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1670935688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670935690}
+  - component: {fileID: 1670935689}
+  m_Layer: 0
+  m_Name: OceanManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1670935689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670935688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0695d93bc42dae8458c5347577d519b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wavesHeight: 0.5
+  wavesFrequency: 1
+  wavesSpeed: 1
+  ocean: {fileID: 1403979941}
+--- !u!4 &1670935690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670935688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.76999986, y: 1.19, z: 1.2399999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1715798514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,3 +1114,4 @@ SceneRoots:
   - {fileID: 1403979947}
   - {fileID: 365073375}
   - {fileID: 894622324}
+  - {fileID: 1670935690}
